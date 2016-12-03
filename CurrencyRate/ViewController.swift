@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+        //Tableview kullanarak birden fazla döviz cinsi gösterilebilir
         
         let url = NSURL(string: "http://www.doviz.com/api/v1/currencies/all/latest")
         let task = URLSession.shared.dataTask(with: url as! URL){(data,response,error) -> Void in
